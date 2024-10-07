@@ -33,7 +33,7 @@ h1.fw-bold {
 
 @media (max-width: 768px) {
     h1.fw-bold {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 
