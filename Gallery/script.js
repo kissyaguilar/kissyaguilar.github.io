@@ -56,7 +56,7 @@ var memberDescriptions = [
   "It’s okay not to be okay.",
   "Life is short, so always choose to be happy.",
   "Life is not about waiting the storm to pass.",
-  "Always do you best and God will do the rest.",
+  "Always do your best and God will do the rest.",
   "Dreams will only stay dreams unless you act.",
   "Never give up. Don’t ever think of giving up.",
   "Keep your eyes on the stars; your feet on ground."
