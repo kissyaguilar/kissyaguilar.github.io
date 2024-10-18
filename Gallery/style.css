@@ -1,0 +1,277 @@
+body {
+  background-color: #d2f7ff;
+}
+
+.navbar-custom {
+  box-shadow: 0 4px 8px rgba(5, 2, 5, 0.5) !important;
+  background-color: #87cdd2;
+  font-family: Arial, sans-serif;
+  transition: padding 0.3s ease;
+}
+
+.navbar-toggler {
+  border-color: gray;
+}
+
+
+.navbar-brand {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-item:last-child .nav-link {
+  margin-right: 0;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #4b6261;
+}
+
+.footer-text {
+  color: white;
+}
+
+.carousel-item img {
+  top: 5;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+#cardContainer {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.card-img-container {
+  max-width: 100%;
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px #415251;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+}
+
+.hover-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(146, 182, 199, 0.5);
+  /* Semi-transparent background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  opacity: 0;
+  transition: opacity 0.5s ease, left 0.5s ease, right 0.5s ease;
+  box-shadow: 0 0 20px rgba(221, 208, 208, 0.7);
+  pointer-events: none;
+  padding: 2vw;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card-img-container:hover .hover-info {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Responsive font size */
+.hover-info p {
+  margin: 5px 0;
+  font-size: 1.5vw;
+  /* Scales with screen width */
+  line-height: 1.2;
+  word-break: break-word;
+  text-shadow: 2px 2px 5px #5d676c;
+}
+
+.card-left .hover-info {
+  left: -300px;
+}
+
+.card-right .hover-info {
+  right: -300px;
+}
+
+.card-left:hover .hover-info {
+  opacity: 1;
+  left: 0;
+}
+
+.card-right:hover .hover-info {
+  opacity: 1;
+  right: 0;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: #919393;
+  color: #f1f1f1;
+}
+
+.dark-mode .navbar-custom {
+  background-color: #5c8a8e;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .navbar-nav .nav-link {
+  color: #f1f1f1;
+}
+
+.dark-mode .btn-outline-secondary {
+  color: #ffffff;
+  border-color: #cdeeff;
+  background-color: #5e7a7d;
+}
+
+.dark-mode .footer-text {
+  color: #f1f1f1;
+}
+
+.dark-mode .card-body {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
+  background-color: #7d7d7d;
+  color: #f1f1f1;
+  border-top: 0px;
+  border-bottom: 5px;
+}
+
+.dark-mode .carousel-item img {
+  filter: brightness(70%);
+}
+
+.footer {
+  color: #2f2828;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 3px solid white;
+}
+
+/* Footer text in light mode */
+.footer-text {
+  color: #2f2828;
+}
+
+/* Footer in dark mode */
+.dark-mode .footer {
+  border-top: 3px solid #f1f1f1;
+}
+
+.hover-info p {
+  margin: 5px 0;
+  font-size: 18px;
+  /* Default*/
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* Large screens (lg) */
+@media (min-width: 992px) {
+  .card-img-container {
+    width: 300px;
+  }
+
+  .hover-info p {
+    font-size: 1.2vw;
+  }
+}
+
+/* Medium screens (md) */
+@media (max-width: 992px) {
+  .card-img-container {
+    width: 250px;
+  }
+
+  .hover-info p {
+    font-size: 1.6vw;
+  }
+}
+
+/* Small screens (sm) */
+@media (max-width: 768px) {
+  .card-img-container {
+    width: 200px;
+  }
+
+  .hover-info p {
+    font-size: 2vw;
+  }
+}
+
+/* Extra small screens (xs) */
+@media (max-width: 576px) {
+  .card-img-container {
+    width: 150px;
+  }
+
+  .hover-info p {
+    font-size: 4vw;
+  }
+
+  .navbar-custom {
+    padding: 1px 4px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+
+  .navbar-toggler {
+    padding: 2px 7px;
+  }
+
+  .btn-outline-secondary {
+    padding: 2px 7px;
+    font-size: 16px;
+  }
+}
