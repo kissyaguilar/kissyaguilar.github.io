@@ -1,17 +1,15 @@
 // Dark Mode Toggle
 const body = document.body;
-const container = document.querySelector('.content-container');
 const darkModeButton = document.getElementById('darkModeButton');
 const darkModeIcon = document.getElementById('darkModeIcon');
 
 darkModeButton.addEventListener('click', () => {
     body.classList.toggle('light-mode');
-    container.classList.toggle('light-mode');
 
     if (body.classList.contains('light-mode')) {
-        darkModeIcon.src = 'images/lightM.png';
+        darkModeIcon.src = 'images/lightM.png';  // Switch to light mode icon
     } else {
-        darkModeIcon.src = 'images/darkM.png';
+        darkModeIcon.src = 'images/darkM.png';  // Switch back to dark mode icon
     }
 });
 
