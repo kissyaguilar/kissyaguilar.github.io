@@ -20,20 +20,27 @@
 
     .card {
       background-color: #1F2326;
-      border-radius: 5px;
+      border-radius: 5px !important;
       padding: 20px;
       text-align: center;
       color: #ECE8E1;
+      transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+      cursor: pointer !important;
+    }
+
+    .card:hover {
+      transform: scale(1);
+      box-shadow: 0 4px 20px rgba(200, 203, 203, 0.2);
     }
   </style>
 </head>
 
 <body id="body">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="images/valoIcon.png" alt="Valorant Icon" class="valo-icon">
+        <img src="images/valoIcon.png" alt="Valorant Icon" class="valo-icon" style="width: 40px;">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +73,7 @@
   <div class="container mt-5 pt-5">
     <div class="row mt-5">
       <div class="col">
-        <h1 class="display-3 text-center">Agent Gallery</h1>
+        <h1 class="display-3 agent-gallery-title">Agent Gallery</h1>
       </div>
     </div>
     <div class="row" id="cardContainer">

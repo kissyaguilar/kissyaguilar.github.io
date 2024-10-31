@@ -7,9 +7,9 @@ darkModeButton.addEventListener('click', () => {
     body.classList.toggle('light-mode');
 
     if (body.classList.contains('light-mode')) {
-        darkModeIcon.src = 'images/lightM.png';  
+        darkModeIcon.src = 'images/lightM.png';
     } else {
-        darkModeIcon.src = 'images/darkM.png'; 
+        darkModeIcon.src = 'images/darkM.png';
     }
 });
 
@@ -38,7 +38,7 @@ const loadAgentsGallery = async () => {
         pageAgents.forEach((agent, index) => {
             agentsGalleryContainer.innerHTML += `
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card rounded-5 my-3">
+                     <div class="card rounded-5 my-3" onclick="goToViewPage('${agent.uuid}')">
                         <div class="imgcontainer">
                             <img src="${agent.displayIcon}" alt="${agent.displayName}">
                         </div>
@@ -69,6 +69,13 @@ function prevPage() {
 
 // First 8 loads in Gallery
 loadAgentsGallery();
+
+//Navigation to view.html
+function goToViewPage(agentId) {
+    console.log("Navigating to view.html with agent ID:", agentId);
+    window.location.href = `view.html?agent=${agentId}`;
+}
+
 
 // Function of Search Agents
 const loadAgent = async (searchTerm) => {
