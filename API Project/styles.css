@@ -1,4 +1,5 @@
-/* Navbar (as default dark mode) */
+/* INDEX.HTML*/
+/* Navbar (as default dark mode) for all*/
 .navbar {
     background-color: #1E1E1E;
     border-bottom: 3px solid #ff4655;
@@ -91,6 +92,7 @@
     transition: background-color 0.3s;
 }
 
+/* MAPS VALORANT GALLERY WITH 3 RIGHT SIDE PICS SHOWCASE */
 /* Valorant Icon */
 .valo-icon {
     width: 40px;
@@ -204,4 +206,72 @@ body.bg-dark.text-light {
 
 .nav-buttons button:focus {
     outline: none;
+}
+
+/* SEARCH AGENT and AGENT GALLERY*/
+body {
+    font-family: 'Valorant', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+    background-color: #1b1c1d;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.imgcontainer img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.agentname {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.agentrole {
+    font-size: 1.2rem;
+    color: #ff4655;
+}
+
+input::placeholder {
+    font-family: 'Rajdhani', sans-serif;
+    color: #ECE8E1;
+}
+
+.result-card {
+    font-family: 'Rajdhani', sans-serif;
+    color: #ECE8E1;
+}
+
+.result-card.light-mode {
+    color: #000000;
+}
+
+.search-label {
+    font-family: 'Rajdhani', sans-serif;
+    color: #ECE8E1;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.search-title {
+    color: #ff4655;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.search-button {
+    color: #ffffff;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    color: #ffffff;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }

@@ -15,10 +15,14 @@ darkModeButton.addEventListener('click', () => {
     }
 });
 
-// Agent Pagination and Loading
 let page = 1;
 
-const loadAgents = async () => {
+// Search and Gallery
+const agentsGalleryContainer = document.getElementById("agentsGalleryContainer");
+const searchAgentsContainer = document.getElementById("searchAgentsContainer");
+
+// Function of Agents Gallery
+const loadAgentsGallery = async () => {
     try {
         const response = await fetch('https://valorant-api.com/v1/agents?isPlayableCharacter=true');
         const data = await response.json();
@@ -29,12 +33,12 @@ const loadAgents = async () => {
         const end = start + 8;
         const pageAgents = agents.slice(start, end);
 
-        // Clear current cards
-        cardContainer.innerHTML = '';
+        // Clear
+        agentsGalleryContainer.innerHTML = '';
 
-        // Render agent cards
+        // Render agent cards 
         pageAgents.forEach((agent, index) => {
-            cardContainer.innerHTML += `
+            agentsGalleryContainer.innerHTML += `
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                     <div class="card rounded-5 my-3">
                         <div class="imgcontainer">
@@ -52,21 +56,67 @@ const loadAgents = async () => {
     }
 };
 
-// Next and Previous page functions
+// Next and Previous btn
 function nextPage() {
     page += 1;
-    loadAgents();
+    loadAgentsGallery();
 }
 
 function prevPage() {
     if (page > 1) {
         page -= 1;
-        loadAgents();
+        loadAgentsGallery();
     }
 }
 
-// Initial agent load
-loadAgents();
+// First 8 loads in Gallery
+loadAgentsGallery();
+
+// Function of Search Agents
+const loadAgent = async (searchTerm) => {
+    try {
+        const response = await fetch(`https://valorant-api.com/v1/agents?isPlayableCharacter=true`);
+        const data = await response.json();
+        const agents = data.data;
+        const agent = agents.find(a => a.displayName.toLowerCase() === searchTerm.toLowerCase() || a.uuid === searchTerm);
+
+        // Agent Not Found notice
+        if (!agent) {
+            searchAgentsContainer.innerHTML = `<div class="col-12 text-center text-danger">Agent not found</div>`;
+            return;
+        }
+
+        // Render the agent 
+        searchAgentsContainer.innerHTML = `
+            <div class="col-12">
+                <div class="card text-center result-card">
+                    <div class="imgcontainer">
+                        <img src="${agent.fullPortrait}" alt="${agent.displayName}">
+                    </div>
+                    <div class="agentname">${agent.displayName}</div>
+                    <div class="agentrole">${agent.role.displayName}</div>
+                    <div class="agentdesc">${agent.description}</div>
+                </div>
+            </div>`;
+    } catch (error) {
+        searchAgentsContainer.innerHTML = `<div class="col-12 text-center text-danger">Error loading agent</div>`;
+    }
+};
+
+// Function to search for an agent 
+function searchAgent() {
+    var searchTerm = document.getElementById("searchTerm").value.trim();
+    if (searchTerm) {
+        loadAgent(searchTerm);
+    } else {
+        searchAgentsContainer.innerHTML = `<div class="col-12 text-center text-danger">Please enter an Agent name or UUID to search.</div>`;
+    }
+}
+//Initial state
+document.addEventListener("DOMContentLoaded", () => {
+    searchAgentsContainer.innerHTML = '';
+});
+
 
 // Map Loading and Navigation
 let maps = [];
@@ -84,7 +134,7 @@ async function fetchMaps() {
     }
 }
 
-// Populate map thumbnails
+// Populate map thumbnails into 3 vertical right side
 function populateThumbnails() {
     const thumbnailContainer = document.getElementById('thumbnailContainer');
     thumbnailContainer.innerHTML = '';
@@ -107,7 +157,7 @@ function populateThumbnails() {
     }
 }
 
-// Update the main map image
+// Update main map 
 function updateMainImage(map) {
     const mainImage = document.getElementById('mainImage');
     const mapTitle = document.getElementById('mapTitle');
@@ -121,7 +171,7 @@ function updateMainImage(map) {
     }
 }
 
-// Previous and Next map thumbnail navigation
+// Previous and Next button
 document.getElementById('prevButton').onclick = () => {
     if (currentIndex > 0) {
         currentIndex -= 3;
@@ -138,7 +188,7 @@ document.getElementById('nextButton').onclick = () => {
     }
 };
 
-// Initialize map data on page load
+// Initialize map
 fetchMaps();
 
 
