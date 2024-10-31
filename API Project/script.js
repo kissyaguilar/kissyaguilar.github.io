@@ -7,9 +7,9 @@ darkModeButton.addEventListener('click', () => {
     body.classList.toggle('light-mode');
 
     if (body.classList.contains('light-mode')) {
-        darkModeIcon.src = 'images/lightM.png';  // Switch to light mode icon
+        darkModeIcon.src = 'images/lightM.png';  
     } else {
-        darkModeIcon.src = 'images/darkM.png';  // Switch back to dark mode icon
+        darkModeIcon.src = 'images/darkM.png'; 
     }
 });
 
