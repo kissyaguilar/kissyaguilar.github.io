@@ -14,14 +14,6 @@
             background-color: #0F1923;
             color: #fff;
         }
-
-        .info-header {
-            color: #ff4655;
-            text-align: center;
-            margin-top: 100px;
-            margin-bottom: 20px;
-            font-family: 'Valorant', sans-serif;
-        }
     </style>
 </head>
 
@@ -89,9 +81,19 @@
                                     <h3 class="agent-title">${agent.displayName}</h3>
                                     <span class="role-badge">${agent.role ? agent.role.displayName : 'Unknown'}</span>
                                     <p class="agent-description">${agent.description}</p>
+                                    <p class="agent-description"><span style="color: #cc4848;">Developer:</span> ${agent.developerName}</p>
+                                    <h4 style="color: #cc4848; font-family: 'Rajdhani', sans-serif;">Abilities</h4>
+                                    <ul class="abilities-list" style="font-family: 'Rajdhani', sans-serif;">
+                                        ${agent.abilities.map(ability => `
+                                            <li>
+                                                <img src="${ability.displayIcon}" alt="${ability.displayName}" class="ability-icon">
+                                                <strong>${ability.displayName}:</strong>
+                                                <p class="agent-description" style="font-size: 1rem; color: #ebdddd;">${ability.description}</p>
+                                            </li>
+                                        `).join('')}
+                                    </ul>
                                 </div>
                             `;
-
                             agentContainer.appendChild(agentCard);
                         } else {
                             agentContainer.innerHTML = "<p>Agent not found.</p>";
@@ -104,7 +106,7 @@
         });
     </script>
 
-    <div class="nav-buttons">
+    <div class="nav-buttons container d-flex justify-content-end mt-4">
         <button onclick="history.back()" class="btn btn-secondary" id="nextButton">BACK</button>
     </div>
 
