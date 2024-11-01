@@ -429,3 +429,79 @@ body.light-mode .role-badge {
 body.light-mode .agent-description {
     color: #324252 !important;
 }
+
+
+/* Default (Dark Mode) */
+body {
+    background-color: #12171c;
+    color: #888;
+}
+
+.footer {
+    background-color: #12171c;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.container {
+    flex: 1;
+}
+
+.footer-links a,
+.social-icons a {
+    color: #888;
+}
+
+.footer-links a:hover,
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* Light Mode */
+.light-mode {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.light-mode .footer {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.light-mode .footer-links a,
+.light-mode .social-icons a {
+    color: #333;
+}
+
+.light-mode .footer-links a:hover,
+.light-mode .social-icons a:hover {
+    color: #555;
+}
+
+.light-mode .copyright {
+    color: #555;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #fff6f6;
+}
