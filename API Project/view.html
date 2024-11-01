@@ -76,7 +76,10 @@
                             agentCard.className = "agent-card";
 
                             agentCard.innerHTML = `
-                                <img src="${agent.fullPortrait}" alt="${agent.displayName}">
+                                <div class="background-card">
+                                    <div class="agent-background" style="background-image: url('${agent.background}');"></div>
+                                    <img src="${agent.fullPortrait}" alt="${agent.displayName}">
+                                </div>
                                 <div class="agent-info">
                                     <h3 class="agent-title">${agent.displayName}</h3>
                                     <span class="role-badge">${agent.role ? agent.role.displayName : 'Unknown'}</span>
