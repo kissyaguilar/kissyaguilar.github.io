@@ -126,30 +126,3 @@ h1.fw-bold {
     display: inline-block;
     margin: 0 10px;
 }
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.koreaText {
-    animation: fadeInUp 1.5s ease-in-out forwards;
-    opacity: 0;
-}
-
-.koreaText {
-    transition: 1s;
-    font-size: 40px;
-    letter-spacing: normal;
-}
-
-.koreaText:hover {
-    letter-spacing: .5em;
-}
