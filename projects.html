@@ -12,44 +12,42 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
- <style>
+<style>
     .btn-primary {
-        background-color: #3b074d; 
+        background-color: #3b074d;
         border-color: #3b074d;
         color: white;
     }
 
     .btn-primary:hover {
-        background-color: #852d69; 
+        background-color: #852d69;
         border-color: #852d69;
     }
 
     .projects {
         text-align: center;
-        padding: 80px;
+        padding: 100px;
     }
 
     .projects .card {
-    background-color: transparent;
-    color: rgb(253, 253, 253);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    background-image: url('images/bgProjCard.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.7;
-    z-index: 1;
-    border-radius: 5px;
-}
+        background-color: transparent;
+        color: rgb(253, 253, 253);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        background-image: url('images/bgProjCard.jpg');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.7;
+        z-index: 1;
+        border-radius: 5px;
+    }
 
-
-
-.projects .card * {
-    position: relative;
-    z-index: 2;
-}
+    .projects .card * {
+        position: relative;
+        z-index: 2;
+    }
 
     .projects .card:hover {
         transform: translateY(-5px);
@@ -65,15 +63,12 @@
             opacity: 0;
             transform: translateY(10px);
         }
+
         to {
             opacity: 1;
             transform: translateY(0);
         }
     }
-
-
-
-
 </style>
 
 
@@ -83,7 +78,7 @@
         <div class="container">
             <a href="#" class="navbar-brand logo">
                 <img src="images/kissyLogo.png" alt="Logo" class="logo-image">
-              </a>              
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -94,13 +89,13 @@
                         <a class="nav-link" href="index.html">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="skills.html">Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Resume</a>
+                        <a class="nav-link" href="resume.html">Resume</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="education.html">About</a>
@@ -118,55 +113,55 @@
         </div>
         <div class="row my-5" id="container">
         </div>
-      </div>
+    </div>
 
-            <script>
-                var contents = [
-                  {
-                    "link": "Project1",
-                    "description": "IPhone 13 Showcase"
-                  },
-                  {
-                    "link": "Project2",
-                    "description": "South Korea Tour"
-                  },
-                  {
-                    "link": "Project3",
-                    "description": "BINI Gallery"
-                  },
-                  {
-                    "link": "Project4",
-                    "description": "Valorant API"
-                  }
-                ]
-            
-                var container = document.getElementById("container");
-            
-                for(var i = 0; i<contents.length; i++){
-            
-                  var courseCode = "WD";
-                  var title = contents[i].link;
-                  var siteLink = "https://kissyaguilar.github.io/" + title;
-                  var githubLink = "https://github.com/kissyaguilar/kissyaguilar.github.io/tree/main/" + title;
+    <script>
+        var contents = [
+            {
+                "link": "Project1",
+                "description": "IPhone 13 Showcase"
+            },
+            {
+                "link": "Project2",
+                "description": "South Korea Tour"
+            },
+            {
+                "link": "Project3",
+                "description": "BINI Gallery"
+            },
+            {
+                "link": "Project4",
+                "description": "Valorant API"
+            }
+        ]
+
+        var container = document.getElementById("container");
+
+        for (var i = 0; i < contents.length; i++) {
+
+            var courseCode = "WD";
+            var title = contents[i].link;
+            var siteLink = "https://kissyaguilar.github.io/" + title;
+            var githubLink = "https://github.com/kissyaguilar/kissyaguilar.github.io/tree/main/" + title;
 
 
-                  var description = contents[i].description;
-            
-                  container.innerHTML += `
+            var description = contents[i].description;
+
+            container.innerHTML += `
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
                       <div class="card my-3 rounded-5 overflow-hidden" style="height: fit-content">
-                        <embed type="text/html" src="`+siteLink+`" width="100%" height="200px">
+                        <embed type="text/html" src="`+ siteLink + `" width="100%" height="200px">
                         <div class="card-body shadow-lg">
-                          <h4 class="card-title">`+title+`</h4>
-                         <h8 <p class="card-text text-body-primary">`+description+ ` </p> </h8>
-                          <a target="_blank" href="`+githubLink+`" class="btn btn-primary">GitHub</a>
-                          <a target="_blank" href="`+siteLink+`" class="btn btn-primary">Site</a>
+                          <h4 class="card-title">`+ title + `</h4>
+                         <h8 <p class="card-text text-body-primary">`+ description + ` </p> </h8>
+                          <a target="_blank" href="`+ githubLink + `" class="btn btn-primary">GitHub</a>
+                          <a target="_blank" href="`+ siteLink + `" class="btn btn-primary">Site</a>
                         </div>
                       </div>
                     </div>
                   `;
-                }
-              </script>
+        }
+    </script>
 
 
     <!-- Starry Background - purple -->
