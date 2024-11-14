@@ -125,6 +125,7 @@ body.bg-dark.text-light {
     font-family: 'valorant', sans-serif;
     font-size: 4rem;
     color: #ff4655;
+    margin-top: 50px;
 }
 
 .main-map img {
@@ -146,7 +147,7 @@ body.bg-dark.text-light {
 
 /* Thumbnail Container for right side images */
 .thumbnail-container {
-    margin-top: 60px;
+    margin-top: 115px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -161,7 +162,6 @@ body.bg-dark.text-light {
     opacity: 0.5;
     transition: opacity 0.5s ease, transform 0.5s ease;
     border-radius: 5px;
-    border: 4px solid#ff4655;
     ;
 }
 
@@ -284,7 +284,6 @@ input::placeholder {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 
 .agent-section {
     padding-top: 0px;
@@ -583,4 +582,43 @@ body {
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* AGENTS GALLERY */
+
+.pagination .page-item .page-link {
+    color: #ff4655;
+    background-color: #0F1923;
+    border: 1px solid #ff4655;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .page-item .page-link:hover {
+    background-color: #ff4655;
+    color: #fff;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #ff4655;
+    color: #fff;
+    border-color: #ff4655;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #999;
+    background-color: #333;
+    border-color: #666;
+}
+
+body.light-mode .pagination .page-item .page-link {
+    color: #ff4655;
+    background-color: #ffffff;
+    border: 1px solid #ff4655;
+}
+
+body.light-mode .pagination .page-item .page-link:hover {
+    background-color: #ff4655;
+    color: #ffffff;
 }

@@ -1,0 +1,183 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Basic Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background Styling */
+body {
+  background: linear-gradient(to bottom, #3b074d, #592047); /* Consistent gradient */
+  color: rgba(242, 230, 238, 1);
+  overflow: auto;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+}
+
+/* Logo Styling */
+.logo-image {
+  width: 35px; 
+  height: auto; 
+}
+
+
+/* Profile Section */
+#Profile {
+  margin-top: 80px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 0 25px rgba(165, 59, 162, 0.8);
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+}
+
+.auto-type {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.typed-cursor {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Starry Background */
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(to bottom, #3b074d, #592047); /* Ensure gradient consistency */
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: moveStars linear infinite;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 1.0);
+}
+
+@keyframes moveStars {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+/* Navbar Styling */
+.header {
+  background-color: #3b074d; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  z-index: 100;
+  box-shadow: 0 4px 15px rgba(16, 0, 10, 0.4);
+}
+
+.navbar a {
+  font-size: 18px;
+  color: rgba(242, 230, 238, 1);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #976688;
+}
+
+.navbar a:hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, #fff, rgba(255, 255, 255, 0.6));
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.6), 0 0 25px rgba(255, 255, 255, 0.4);
+  animation: starBurst 1.5s ease-out forwards;
+}
+
+/* Starburst Animation */
+@keyframes starBurst {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+}
+
+/* Education Section (educ.html) */
+.educ-text {
+  color: #976688;
+}
+
+#education {
+  padding-top: 50px;
+}
+
+.education-item {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.education-item.fade-in {
+  opacity: 1;
+}
+
+#education .row {
+  margin-top: 2rem;
+}
+
+#education h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#education p {
+  font-size: 1rem;
+}
