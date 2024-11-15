@@ -53,6 +53,19 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .auto-type {
+      font-size: 2.5rem;
+  }
+
+  .profile-image {
+    max-width: 60%;
+  }
+}
+  
+
+
+
 .typed-cursor {
   font-size: 3rem;
   font-weight: bold;
