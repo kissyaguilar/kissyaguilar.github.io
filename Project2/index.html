@@ -6,7 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="images/southKoreaTab.png" type="image/kissyPlace"> <!-- for logo -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -41,35 +42,52 @@
 </style>
 
 <body class="bg-light">
-
-  <!-- Sidebar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="images/avatar.jpg" style="width:45%;" class="rounded-circle"
-          alt="Avatar"></a>
-      <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+      <a class="navbar-brand" href="#">
+        <img src="images/avatar.jpg" alt="Avatar" class="rounded-circle" style="width: 45px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#homeVideo"><i class="fa fa-home me-2"></i>Home</a>
+            <a class="nav-link active" aria-current="page" href="#homeVideo">
+              <i class="fa fa-home me-2"></i>Home
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#places"><i class="fa fa-map me-2"></i>Place</a>
+            <a class="nav-link" href="#places">
+              <i class="fa fa-map me-2"></i>Places
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about"><i class="fa fa-flag me-2"></i>About</a>
+            <a class="nav-link" href="#about">
+              <i class="fa fa-flag me-2"></i>About
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#location"><i class="fa fa-location me-2"></i>Location</a>
+            <a class="nav-link" href="#location">
+              <i class="fa fa-location-arrow me-2"></i>Location
+            </a>
           </li>
         </ul>
         <div class="d-flex">
-          <a href="https://facebook.com" target="_blank" class="text-dark me-3"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://instagram.com" target="_blank" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com" target="_blank" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
-          <a href="https://linkedin.com" target="_blank" class="text-dark"><i class="fab fa-linkedin"></i></a>
+          <a href="https://facebook.com" target="_blank" class="text-dark me-3">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="text-dark me-3">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="text-dark me-3">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="text-dark">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -254,96 +272,84 @@
           <p id="language" class="koreaText" style="font-size: 18px; color: #333;">
             <strong>한국의 숨겨진 보석들을 발견하세요 — 지도를 탐색하여 잊을 수 없는 방문지를 찾아보세요!</strong>
           </p>
-          <h2 class="fw-bold koreaText col-12 text-center">MAP LOCATION</h2>
+          <h2 class="fw-bold koreaText">MAP LOCATION</h2>
           <div class="ratio ratio-16x9">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.455105320804!2d126.97829181531896!3d37.56653597979832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3f5dd992535%3A0x929ac39d9aebf411!2sGyeongbokgung%20Palace!5e0!3m2!1sen!2skr!4v1690135265278!5m2!1sen!2skr"
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.455105320804!2d126.97829181531896!3d37.56653597979832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3f5dd992535%3A0x929ac39d9aebf411!2sGyeongbokgung%20Palace!5e0!3m2!1sen!2skr!4v1690135265278!5m2!1sen!2skr"
               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
-  <!-- About Section -->
-  <div class="about-section mt-4 p-5 bg-white" id="about">
-    <h2 class="text-center fw-bold koreaText">ABOUT</h2>
-    <div class="text-center">
-      <img src="images/map.png" alt="Map" class="img-fluid rounded" style="width: 250px;">
-    </div>
-    <p class="mt-4" style="text-align: justify;">
-      &emsp;&emsp;&emsp;&emsp;South Korea, officially known as the Republic of Korea, is a country in East Asia
-      constituting the southern part of the Korean Peninsula. It shares a border with North Korea and is surrounded by
-      the sea on three sides. South Korea is known for its vibrant culture, rapid technological advancements, and rich
-      history. The country boasts beautiful landscapes, from the bustling city life of Seoul to the serene beauty of
-      its temples and natural parks. South Korea is also renowned for its pop culture, particularly K-pop and Korean
-      dramas, which have garnered international fame.
-    </p>
-    <p style="text-align: justify;">
-      The country has a fascinating blend of tradition and modernity, with ancient palaces and temples standing
-      alongside futuristic skyscrapers. South Korea is also famous for its delectable cuisine, which includes iconic
-      dishes such as Kimchi, Bibimbap, and Korean BBQ. South Korea's tourism industry continues to thrive, with
-      millions of visitors every year eager to explore its cultural heritage, scenic beauty, and unique experiences.
-    </p>
-    <p style="text-align: justify;">
-      Whether you're visiting for its historical landmarks, natural wonders, or urban excitement, South Korea has
-      something to offer for every type of traveler.
-    </p>
-  </div>
-  </div>
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2024 South Koria Tour. All rights reserved.</p>
-      <p>Contact us: <a href="mailto:tour@issy.com">tour@issy.com</a></p>
-      <div class="social-links">
-        <a href="https://facebook.com" target="_blank">Facebook</a> |
-        <a href="https://instagram.com" target="_blank">Instagram</a> |
-        <a href="https://twitter.com" target="_blank">Twitter</a> |
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <!-- About Section -->
+        <div class="about-section mt-4 p-5 bg-white" id="about">
+          <h2 class="text-center fw-bold koreaText">ABOUT</h2>
+          <div class="text-center">
+            <img src="images/map.png" alt="Map" class="img-fluid rounded" style="width: 250px;">
+          </div>
+          <p class="mt-4" style="text-align: justify;">
+            &emsp;&emsp;&emsp;&emsp;South Korea, officially known as the Republic of Korea, is a country in East Asia
+            constituting the southern part of the Korean Peninsula. It shares a border with North Korea and is
+            surrounded by
+            the sea on three sides. South Korea is known for its vibrant culture, rapid technological advancements, and
+            rich
+            history. The country boasts beautiful landscapes, from the bustling city life of Seoul to the serene beauty
+            of
+            its temples and natural parks. South Korea is also renowned for its pop culture, particularly K-pop and
+            Korean
+            dramas, which have garnered international fame.
+          </p>
+          <p style="text-align: justify;">
+            The country has a fascinating blend of tradition and modernity, with ancient palaces and temples standing
+            alongside futuristic skyscrapers. South Korea is also famous for its delectable cuisine, which includes
+            iconic
+            dishes such as Kimchi, Bibimbap, and Korean BBQ. South Korea's tourism industry continues to thrive, with
+            millions of visitors every year eager to explore its cultural heritage, scenic beauty, and unique
+            experiences.
+          </p>
+          <p style="text-align: justify;">
+            Whether you're visiting for its historical landmarks, natural wonders, or urban excitement, South Korea has
+            something to offer for every type of traveler.
+          </p>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
 
-</html>
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>&copy; 2024 South Koria Tour. All rights reserved.</p>
+          <p>Contact us: <a href="mailto:tour@issy.com">tour@issy.com</a></p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+      <script>
+        let isMuted = true;
 
-</html>
+        function toggleSound() {
+          const videoFrame = document.getElementById('videoFrame');
+          const soundIcon = document.getElementById('soundIcon');
+          isMuted = !isMuted;
 
-</div>
+          if (isMuted) {
+            videoFrame.src = "https://www.youtube.com/embed/VTsGRGeBj98?autoplay=1&mute=1";
+            soundIcon.classList.remove('fa-volume-up');
+            soundIcon.classList.add('fa-volume-off');
+          } else {
+            videoFrame.src = "https://www.youtube.com/embed/VTsGRGeBj98?autoplay=1";
+            soundIcon.classList.remove('fa-volume-off');
+            soundIcon.classList.add('fa-volume-up');
+          }
+        }
+      </script>
 
-<script>
-  let isMuted = true;
-
-  function toggleSound() {
-    const videoFrame = document.getElementById('videoFrame');
-    const soundIcon = document.getElementById('soundIcon');
-    isMuted = !isMuted;
-
-    if (isMuted) {
-      videoFrame.src = "https://www.youtube.com/embed/VTsGRGeBj98?autoplay=1&mute=1";
-      soundIcon.classList.remove('fa-volume-up');
-      soundIcon.classList.add('fa-volume-off');
-    } else {
-      videoFrame.src = "https://www.youtube.com/embed/VTsGRGeBj98?autoplay=1";
-      soundIcon.classList.remove('fa-volume-off');
-      soundIcon.classList.add('fa-volume-up');
-    }
-  }
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Navbar Toggle Script -->
-<script>
-  function toggleNavbar() {
-    var navbarContent = document.getElementById('navbarContent');
-    if (navbarContent.classList.contains('show')) {
-      navbarContent.classList.remove('show');
-    } else {
-      navbarContent.classList.add('show');
-    }
-  }
-</script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
