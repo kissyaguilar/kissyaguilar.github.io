@@ -65,13 +65,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">
-              <i class="fa fa-flag me-2"></i>About
+            <a class="nav-link" href="#location">
+              <i class="fa fa-location-arrow me-2"></i>Location
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#location">
-              <i class="fa fa-location-arrow me-2"></i>Location
+            <a class="nav-link" href="#about">
+              <i class="fa fa-flag me-2"></i>About
             </a>
           </li>
         </ul>
@@ -94,25 +94,29 @@
   </nav>
 
   <!-- Page Content -->
-  <div class="container" style="margin-top: 100px;">
+    <div class="container" id="homeVideo" style="position: relative; width: 100%; overflow: hidden;">
+      <div class="row">
+        <div class="col" style="height: 100vh;">
+          <iframe style="pointer-events: none; margin-left: 50%; transform: translateX(-50%);" width="4000px"
+            height="100%"
+            id="videoFrame" src="https://www.youtube.com/embed/VTsGRGeBj98?si=YiBTmr3duoYQgCwZ&autoplay=1&mute=1&controls=0&rel=0&disablekb=1&loop=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div style="position: absolute; top: 100px; width: 100%;">
+          <h1 class="fw-bold">WELCOME TO SOUTH KOREA</h1>
+      </div>
 
-    <div id="homeVideo" style="position: relative; width: 100%; height: 100vh; overflow: hidden;">
-      <iframe id="videoFrame" src="https://www.youtube.com/embed/VTsGRGeBj98?autoplay=1&mute=1&modestbranding=1&rel=0"
-        frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></iframe>
-      <h1 class="fw-bold">WELCOME TO SOUTH KOREA</h1>
-      <a href="#" class="sound-button" id="soundButton" onclick="toggleSound()">
-        <i class="fa fa-volume-off" id="soundIcon"></i>
-      </a>
-    </div>
-
+      
     <!-- Sub-header: Places to Go -->
-    <div class="places-header" id="places">
-      <h2 class="fw-bold koreaText">PLACES TO GO</h2>
+    <div id="places">
+      <div class="places-header" style="padding-top: 50px;">
+      <h2 class="fw-bold koreaText" >PLACES TO GO</h2>
     </div>
+  </div>
 
     <!-- First Photo Grid -->
-    <div class="row mt-4">
       <div class="col-md-4 mb-4">
         <img src="images/1.webp" alt="Seoul" class="img-fluid rounded">
         <div class="bg-white p-3">
@@ -281,8 +285,9 @@
         </div>
 
         <!-- About Section -->
-        <div class="about-section mt-4 p-5 bg-white" id="about">
-          <h2 class="text-center fw-bold koreaText">ABOUT</h2>
+         <div id="about">
+        <div class="about-section mt-4 p-5 bg-white";>
+          <h2 class="text-center fw-bold koreaText" >ABOUT</h2>
           <div class="text-center">
             <img src="images/map.png" alt="Map" class="img-fluid rounded" style="width: 250px;">
           </div>
@@ -326,26 +331,6 @@
           </div>
         </div>
       </footer>
-
-      <script>
-        let isMuted = true;
-
-        function toggleSound() {
-          const videoFrame = document.getElementById('videoFrame');
-          const soundIcon = document.getElementById('soundIcon');
-          isMuted = !isMuted;
-
-          if (isMuted) {
-            videoFrame.src = "https://www.youtube.com/embed/VTsGRGeBj98?autoplay=1&mute=1";
-            soundIcon.classList.remove('fa-volume-up');
-            soundIcon.classList.add('fa-volume-off');
-          } else {
-            videoFrame.src = "https://www.youtube.com/embed/VTsGRGeBj98?autoplay=1";
-            soundIcon.classList.remove('fa-volume-off');
-            soundIcon.classList.add('fa-volume-up');
-          }
-        }
-      </script>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">

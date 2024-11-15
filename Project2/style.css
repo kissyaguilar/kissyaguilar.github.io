@@ -27,13 +27,13 @@ h1.fw-bold {
         0 0 80px rgba(96, 105, 199, 0.8),
         0 0 100px rgba(203, 203, 213, 0.8),
         0 0 150px rgba(65, 48, 177, 0.8);
-    margin-top: 320px;
+    margin-top: 225px;
     animation: slideDown 15s ease-in-out;
 }
 
 @media (max-width: 768px) {
     h1.fw-bold {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 
