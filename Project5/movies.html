@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">FILIPINO MOVIES</h2>
+        <!-- Carousel -->
+        <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carouselInner">
+            </div>
+
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Filipino Movies. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script>
+        const movies = [
+            {
+                title: "‘Unexpectedly Yours",
+                image: "https://i.pinimg.com/736x/10/2a/21/102a2190435e058b30eb250b4a5133fa.jpg",
+                video: "https://www.youtube.com/embed/Ld3mDVDFhBA?si=Rh-vFkZY6tKpIJZW"
+            },
+            {
+                title: "My Ex and Why's",
+                image: "https://i.pinimg.com/736x/8e/b8/7d/8eb87de430630ebcba4dad7350445d4b.jpg",
+                video: "https://www.youtube.com/embed/rLEELRGuf80?si=jADwjSsK8XWxHygQ"
+            },
+            {
+                title: "Barcelona: A Love Untold",
+                image: "https://i.pinimg.com/736x/02/6b/b6/026bb691b917dc83e1885390842bfad8.jpg",
+                video: "https://www.youtube.com/embed/Df1dqWaC7c0?si=inCrQ2lJN4snGfOm"
+            },
+            {
+                title: "Never Not Love You",
+                image: "https://i.pinimg.com/736x/29/46/03/294603786f85adbd41536083f1e2ee86.jpg",
+                video: "https://www.youtube.com/embed/Bdw10vnRnyQ?si=rIgeH1T0cNMPE5q3"
+            },
+            {
+                title: "This Time",
+                image: "https://i.pinimg.com/736x/29/2b/86/292b862d94a52d1204a5ec4959485f02.jpg",
+                video: "https://www.youtube.com/embed/pv9KDSvvVEs?si=L8B9p9bnyPgnG-QQ"
+            },
+            {
+                title: "Between Maybes",
+                image: "https://i.pinimg.com/736x/43/ab/3d/43ab3d57e8711fbcff67dbe3e9dfaa94.jpg",
+                video: "https://www.youtube.com/embed/vseiOQL4UDM?si=TJdICB2Gkq3LUmfz"
+            },
+            {
+                title: "Just The Way You Are",
+                image: "https://i.pinimg.com/736x/5a/8b/b3/5a8bb3d8b61efd259d8eafe8c10dd328.jpg",
+                video: "https://www.youtube.com/embed/LLv_6VANoV0?si=XCgwH8BlML23jxUM"
+            },
+            {
+                title: "Loving in Tandem",
+                image: "https://i.pinimg.com/736x/b1/a2/34/b1a23427aa49c6e1eafdf397919b6ce5.jpg",
+                video: "https://www.youtube.com/embed/cit1mm96w30?si=Xa8irqopGY9_V34q"
+            },
+            {
+                title: "Everyday I Love You",
+                image: "https://i.pinimg.com/736x/4b/a3/37/4ba33737c56f559a26d4d0afc7700efb.jpg",
+                video: "https://www.youtube.com/embed/IT2mkMTnCXI?si=ITFgkuSCdjLE9gmB"
+            },
+            {
+                title: "Can't Help Falling In Love",
+                image: "https://i.pinimg.com/736x/55/55/9b/55559b2d950486ef63605b7ca06ab119.jpg",
+                video: "https://www.youtube.com/embed/9UNbFfSzaE8?si=MxiSNfnMPrQWbVrD",
+            },
+            {
+                title: "Crazy Beautiful You",
+                image: "https://i.pinimg.com/736x/45/53/5e/45535e38460db9167d904e298f92cf40.jpg",
+                video: "https://www.youtube.com/embed/DCrt01xsT_M?si=ghbc0MsZb892DONu"
+            },
+            {
+                title: "James and Pat and Dave",
+                image: "https://i.pinimg.com/736x/42/d6/e8/42d6e83412bb3f5e3949bca1dc8d26d6.jpg",
+                video: "https://www.youtube.com/embed/xHdGj8CVSGA?si=H9_16fKCdTWtXnyo"
+            }
+        ];
+
+        const moviesPerSlide = 4;
+        const carouselInner = document.getElementById('carouselInner');
+
+        for (let i = 0; i < movies.length; i += moviesPerSlide) {
+            const slideMovies = movies.slice(i, i + moviesPerSlide);
+            let slideContent = `<div class="carousel-item ${i === 0 ? 'active' : ''}"><div class="row">`;
+
+            slideMovies.forEach(movie => {
+                slideContent += `
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="card">
+                            <a href="view.html?video=${encodeURIComponent(movie.video)}&title=${encodeURIComponent(movie.title)}">
+                                <img src="${movie.image}" class="card-img-top" alt="${movie.title}">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">${movie.title}</h5>
+                            </div>
+                        </div>
+                    </div>`;
+            });
+
+            slideContent += `</div></div>`;
+            carouselInner.innerHTML += slideContent;
+        }
+    </script>
+</body>
+
+</html>
