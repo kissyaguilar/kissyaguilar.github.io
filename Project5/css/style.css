@@ -108,6 +108,20 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+a img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.card {
+    overflow: hidden; 
+    border-radius: 10px; 
+}
+
 .container {
     background: rgba(0, 0, 0, 0.5);
 }
@@ -162,7 +176,6 @@ body {
 }
 
 /* view.html */
-
 .container {
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
