@@ -33,6 +33,9 @@
 }
 
 /*ADD OR REMOVE LAYERS AS NEEDED*/
+#keyart-15 {
+	background-image: url(img/parallax15.png);
+}
 
 #keyart-0 {
 	background-image: url(img/parallax0.png);
@@ -47,11 +50,11 @@
 }
 
 #keyart-3 {
-	background-image: url(img/parallax3.png);
+	background-image: url(img/parallax4.png);
 }
 
 #keyart-4 {
-	background-image: url(img/parallax4.png);
+	background-image: url(img/parallax3.png);
 }
 
 #keyart-5 {
@@ -69,6 +72,32 @@
 #keyart-8 {
 	background-image: url(img/parallax8.png);
 }
+
+#keyart-9 {
+	background-image: url(img/parallax9.png);
+}
+
+#keyart-10 {
+	background-image: url(img/parallax10.png);
+}
+
+#keyart-11 {
+	background-image: url(img/parallax11.png);
+}
+
+#keyart-12 {
+	background-image: url(img/parallax12.png);
+}
+
+#keyart-13 {
+	background-image: url(img/parallax13.png);
+}
+
+#keyart-14 {
+	background-image: url(img/parallax14.png);
+}
+
+
 
 #keyart-scrim {
 	opacity: 0;
