@@ -8,7 +8,7 @@
     <title>VALORANT</title>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -21,6 +21,11 @@
             display: flex;
             flex-direction: column;
             scroll-behavior: smooth;
+
+        }
+
+        .video-card {
+            overflow: hidden;
         }
     </style>
 </head>
@@ -43,7 +48,6 @@
                     <li class="nav-item"><a class="nav-link" href="index.html#about">ABOUT</a></li>
                     <li class="nav-item"><a class="nav-link" href="search.html">SEARCH</a></li>
                     <li class="nav-item"><a class="nav-link" href="agents.html">AGENTS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="maps.html">MAPS</a></li>
                 </ul>
                 <div class="d-flex">
                     <button id="darkModeButton" class="icon-btn">
@@ -57,7 +61,7 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="content-container container mt-5">
+    <div class="container-fluid p-0">
 
         <!-- Video Card -->
         <div id="video" class="video-card mb-4">
@@ -69,7 +73,7 @@
         </div>
 
         <!-- Cards Section -->
-        <div class="row g-4">
+        <div class="row g-0 justify-content-center">
             <!-- SEARCH -->
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100" style="width: 100%;">
@@ -97,60 +101,45 @@
                 </div>
             </div>
 
-            <!-- MAPS -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100" style="width: 100%;">
-                    <a href="maps.html">
-                        <img src="images/maps.jpg" class="card-img-top" alt="Maps">
-                    </a>
-                    <div class="card-body bg-dark">
-                        <h5 class="card-title text-light">Maps Showcase</h5>
-                        <p class="card-text text-light"> Go to the maps section to see the different locations related
-                            to
-                            Valorant agents.</p>
-                    </div>
-                </div>
+            <!-- About Section -->
+            <div class="about-section text-center mt-5" id="about">
+                <h2>About Valorant</h2>
+                <p>
+                    Valorant is a free-to-play multiplayer tactical first-person shooter developed by Riot Games,
+                    released in 2020. The game features 5v5 matches where players choose from unique "agents,"
+                    each with special abilities, promoting strategic teamwork and precise gunplay.
+                </p>
+                <p>
+                    Teams compete to plant or defuse a bomb (the Spike) on intricately designed maps,
+                    emphasizing communication and coordination. With its competitive esports scene, regular updates,
+                    and engaging art style, Valorant has quickly become a favorite among players,
+                    combining mechanical skill with strategic depth for an exciting gameplay experience.
+                </p>
             </div>
+
         </div>
 
-        <!-- About Section -->
-        <div class="about-section text-center mt-5" id="about">
-            <h2>About Valorant</h2>
-            <p>
-                Valorant is a free-to-play multiplayer tactical first-person shooter developed by Riot Games,
-                released in 2020. The game features 5v5 matches where players choose from unique "agents,"
-                each with special abilities, promoting strategic teamwork and precise gunplay.
-            </p>
-            <p>
-                Teams compete to plant or defuse a bomb (the Spike) on intricately designed maps,
-                emphasizing communication and coordination. With its competitive esports scene, regular updates,
-                and engaging art style, Valorant has quickly become a favorite among players,
-                combining mechanical skill with strategic depth for an exciting gameplay experience.
-            </p>
-        </div>
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="https://twitter.com/PlayVALORANT" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/valorant" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/valorant" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.com/invite/valorant" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
 
-    </div>
+            <div class="footer-logo">
+                <img src="images/valoIcon.png" alt="Valorant Logo">
+            </div>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="social-icons">
-            <a href="https://twitter.com/PlayVALORANT" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.youtube.com/valorant" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/valorant" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://discord.com/invite/valorant" target="_blank"><i class="fab fa-discord"></i></a>
-        </div>
-
-        <div class="footer-logo">
-            <img src="images/valoIcon.png" alt="Valorant Logo">
-        </div>
-
-        <div class="copyright">
-            &copy; 2024 Valorant. All rights reserved.
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+            <div class="copyright">
+                &copy; 2024 Valorant. All rights reserved.
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>

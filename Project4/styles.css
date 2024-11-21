@@ -92,99 +92,6 @@
     transition: background-color 0.3s;
 }
 
-/* MAPS VALORANT GALLERY WITH 3 RIGHT SIDE PICS SHOWCASE */
-/* Valorant Icon */
-.valo-icon {
-    width: 40px;
-    height: 40px;
-}
-
-body.bg-dark.text-light {
-    background-color: #212529;
-    color: #f8f9fa;
-}
-
-/* Map Container and Image*/
-.map-container {
-    width: 100%;
-    display: flex;
-    padding: 50px;
-    background-color: #0F1923;
-}
-
-.main-map {
-    text-align: center;
-    flex: 3;
-    position: relative;
-    margin-top: 0px;
-    border-radius: 5px;
-    margin-bottom: 60px;
-}
-
-.main-map h1 {
-    font-family: 'valorant', sans-serif;
-    font-size: 4rem;
-    color: #ff4655;
-    margin-top: 50px;
-}
-
-.main-map img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-/* Map Details */
-.map-details {
-    position: absolute;
-    bottom: 20px;
-    font-family: 'valorant', sans-serif;
-    left: 20px;
-    color: #fff;
-    padding: 10px;
-}
-
-/* Thumbnail Container for right side images */
-.thumbnail-container {
-    margin-top: 115px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 20px;
-    position: relative;
-    height: auto;
-    max-height: calc(100vh - 150px);
-}
-
-.thumbnail-container img {
-    opacity: 0.5;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    border-radius: 5px;
-    ;
-}
-
-.thumbnail-container img:hover {
-    opacity: 1;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
-    transform: scale(1.0);
-}
-
-.thumbnail-container img.active {
-    opacity: 1;
-}
-
-.nav-buttons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    margin-top: -80px;
-    margin-right: 130px;
-    padding: 10px;
-    border-radius: 4px;
-}
-
 .nav-buttons button {
     padding: 10px 20px;
     font-family: 'valorant', sans-serif;
@@ -439,7 +346,6 @@ body {
 
 .footer {
     background-color: #12171c;
-    padding: 20px 0;
     text-align: center;
     font-family: 'Rajdhani', sans-serif;
 }
@@ -455,7 +361,7 @@ body {
 
 .footer-links a:hover,
 .social-icons a:hover {
-    color: #fff;
+    color: #cc5353;
 }
 
 /* Light Mode */
