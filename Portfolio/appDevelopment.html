@@ -3,15 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="" X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kissy Aguilar</title>
     <link rel="shortcut icon" href="images/kissyTab.png" type="image/png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <style>
@@ -77,8 +75,15 @@
             transform: translateY(0);
         }
     }
-</style>
 
+    .projects .card img {
+        width: 100%;
+        height: 200px; 
+        object-fit: cover; 
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+</style>
 
 <body>
     <!-- Header / Navbar -->
@@ -121,8 +126,6 @@
         </div>
     </header>
 
-
-
     <div class="projects">
         <div class="container text-center py-5">
             <span class="display-3 auto-type"></span>
@@ -135,62 +138,58 @@
         var contents = [
             {
                 "link": "A02",
-                "description": ""
+                "description": "One-index PHP website utilizing the MVC architecture"
             },
             {
                 "link": "A03",
-                "description": ""
+                "description": "Description."
             },
             {
                 "link": "A04",
-                "description": ""
+                "description": "Description."
             },
             {
                 "link": "A05",
-                "description": ""
+                "description": "Description."
             },
             {
                 "link": "A06",
-                "description": ""
+                "description": "Description."
             },
             {
                 "link": "A07",
-                "description": ""
+                "description": "Description."
             },
         ]
 
         var container = document.getElementById("container");
 
         for (var i = 0; i < contents.length; i++) {
-
             var courseCode = "AD";
             var title = contents[i].link;
-            var siteLink = "https://kissyaguilar.github.io/ADET/" + title + "/index.html";
+            var siteLink = "https://kissyaguilar.github.io/ADET/" + title + "/index.php";
             var githubLink = "https://github.com/kissyaguilar/kissyaguilar.github.io/tree/main/ADET/" + title;
-
-
             var description = contents[i].description;
+            var imageSrc = "images/" + title + ".png"; 
 
             container.innerHTML += `
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                      <div class="card my-3 rounded-5 overflow-hidden" style="height: fit-content">
-                        <embed type="text/html" src="`+ siteLink + `" width="100%" height="200px">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card my-3 rounded-5 overflow-hidden" style="height: fit-content">
+                        <img src="${imageSrc}" alt="${title} screenshot" class="card-img-top">
                         <div class="card-body shadow-lg">
-                          <h4 class="card-title">`+ title + `</h4>
-                         <h8 <p class="card-text text-body-primary">`+ description + ` </p> </h8>
-                          <a href="`+ githubLink + `" class="btn btn-primary">GitHub</a>
-                          <a href="`+ siteLink + `" class="btn btn-primary">Site</a>
+                            <h4 class="card-title">${title}</h4>
+                            <p class="card-text text-body-primary">${description}</p>
+                            <a href="${githubLink}" class="btn btn-primary">GitHub</a>
+                            <a href="${siteLink}" class="btn btn-primary" download>Site</a>
                         </div>
-                      </div>
                     </div>
-                  `;
+                </div>
+            `;
         }
     </script>
 
-
     <!-- Starry Background - purple -->
     <div class="stars">
-        <!--stars-->
         <script>
             for (let i = 0; i < 300; i++) {
                 let star = document.createElement("div");
@@ -205,7 +204,7 @@
     </div>
 
     <!-- Typed.js Typing Effect -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2 Asc=1"></script>
     <script>
         var typed = new Typed(".auto-type", {
             strings: ["App Development Projects"],
