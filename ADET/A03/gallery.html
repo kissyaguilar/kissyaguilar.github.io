@@ -16,40 +16,56 @@
     <link rel="shortcut icon" href="assets/images/blackPink Icon.png" type="image/blackPink Logo">
 
     <style>
+.polaroid {
+    background: #fff;
+    padding: 15px 10px 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    position: relative;
+}
 
-        /* REMINDER PUT IN CSS */
+.polaroid:nth-child(1)  { transform: rotate(-5deg) translate(10px, -20px); width: 90%; }
+.polaroid:nth-child(2)  { transform: rotate(4deg) translate(-15px, 10px); width: 110%; }
+.polaroid:nth-child(3)  { transform: rotate(-3deg) translate(20px, 0); width: 100%; }
+.polaroid:nth-child(4)  { transform: rotate(6deg) translate(-10px, -15px); width: 95%; }
+.polaroid:nth-child(5)  { transform: rotate(-2deg) translate(15px, 20px); width: 105%; }
+.polaroid:nth-child(6)  { transform: rotate(5deg) translate(-20px, -10px); width: 85%; }
+.polaroid:nth-child(7)  { transform: rotate(-4deg) translate(5px, 15px); width: 115%; }
+.polaroid:nth-child(8)  { transform: rotate(3deg) translate(-5px, -25px); width: 90%; }
+.polaroid:nth-child(9)  { transform: rotate(-6deg) translate(25px, 5px); width: 100%; }
+.polaroid:nth-child(10) { transform: rotate(2deg) translate(-15px, 10px); width: 110%; }
+
+.polaroid:hover {
+    transform: rotate(0deg) translate(0, 0);
+    box-shadow: 3px 3px 10px rgba(77, 75, 75, 0.5);
+    z-index: 10;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+.polaroid p {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
     .polaroid {
-        background: #fff;
-        padding: 50px 10px 30px 10px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-        transform: rotate(-3deg);
-        transition: transform 0.3s ease;
-      }
-      .polaroid:nth-child(even) {
-        transform: rotate(3deg);
-      }
-      .polaroid:hover {
-        transform: rotate(0deg);
-        box-shadow: 3px 3px 10px rgba(77, 75, 75, 0.5);
-      }
-      .polaroid img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-      }
-      .polaroid p {
-        text-align: center;
-        margin-top: 10px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        color: #1a1a1a;
-      }
-      h1, h2 {
-        font-family: 'Poppins', sans-serif;
-        color: #1a1a1a;
-        font-weight: 900;
-        text-transform: uppercase;
-      }
+        width: 100% !important;
+        transform: none !important;
+        margin-bottom: 20px;
+    }
+}
+
+.row.g-4 { position: relative; }
+.polaroid { margin-bottom: 20px; }
     </style>
 
 <body data-bs-theme="light">
@@ -86,44 +102,73 @@
         </div>
     </nav>
 
-
-    <!-- Gallery Section -->
-  <div class="container py-5">
-    <h1 class="text-center mb-5">BLΛƆKPIИK Gallery</h1>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="polaroid">
-          <img src="assets/images/jisoo.jpg" alt="Jisoo Selfie">
-          <p>Jisoo's Selfie</p>
-        </div>
+<!-- LOOK PICS -->
+<!-- Gallery Section -->
+<div class="container py-5">
+  <h1 class="text-center mb-5">BLΛƆKPIИK Gallery</h1>
+  <div class="row g-4">
+      <div class="col-6 col-md-3">
+          <div class="polaroid">
+              <img src="assets/images/1.png" alt="Selfie" class="img-fluid">
+              <p>    </p>
+          </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="polaroid">
-          <img src="assets/images/jennie.jpg" alt="Jennie Selfie">
-          <p>Jennie's Selfie</p>
-        </div>
+      <div class="col-6 col-md-3">
+          <div class="polaroid">
+              <img src="assets/images/2.png" alt="Selfie" class="img-fluid">
+              <p>    </p>
+          </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="polaroid">
-          <img src="assets/images/rose.png" alt="Rosé Selfie">
-          <p>Rosé's Selfie</p>
-        </div>
+      <div class="col-6 col-md-3">
+          <div class="polaroid">
+              <img src="assets/images/3.png" alt="Selfie" class="img-fluid">
+              <p>    </p>
+          </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="polaroid">
-          <img src="assets/images/lisa.jpg" alt="Lisa Selfie">
-          <p>Lisa's Selfie</p>
-        </div>
+      <div class="col-6 col-md-3">
+          <div class="polaroid">
+              <img src="assets/images/4.png" alt="Selfie" class="img-fluid">
+              <p>   </p>
+          </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="polaroid">
-          <img src="assets/images/blackPinkImg.jpg" alt="Group Pic">
-          <p>Group Shot</p>
-        </div>
+      <div class="col-6 col-md-3">
+          <div class="polaroid">
+              <img src="assets/images/5.png" alt="Selfie" class="img-fluid">
+              <p>   </p>
+          </div>
       </div>
-    </div>
+      <div class="col-6 col-md-3">
+          <div class="polaroid">
+              <img src="assets/images/6.png" alt="Selfie" class="img-fluid">
+              <p>   </p>
+          </div>
+      </div>
+      <div class="col-6 col-md-3">
+          <div class="polaroid">
+              <img src="assets/images/7.png" alt="Selfie" class="img-fluid">
+              <p>    </p>
+          </div>
+      </div>
+      <div class="col-6 col-md-3">
+          <div class="polaroid">
+              <img src="assets/images/8.png" alt="Selfie" class="img-fluid">
+              <p>    </p>
+          </div>
+      </div>
+      <div class="col-6 col-md-3">
+          <div class="polaroid">
+              <img src="assets/images/9.png" alt="Selfie" class="img-fluid">
+              <p>    </p>
+          </div>
+      </div>
+      <div class="col-6 col-md-3">
+          <div class="polaroid">
+              <img src="assets/images/10.png" alt="Selfie" class="img-fluid">
+              <p>   t</p>
+          </div>
+      </div>
   </div>
-
+</div>
 
 
 
