@@ -389,3 +389,43 @@ audio {
 }
 
 /* Gallery */
+.polaroid {
+  background: #fff;
+  padding: 15px 15px 25px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  margin: 0 auto;
+}
+
+.polaroid:nth-child(odd) {
+  transform: rotate(-3deg) translate(5px, -10px);
+}
+
+.polaroid:nth-child(even) {
+  transform: rotate(3deg) translate(-5px, -10px);
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) translate(0, 0);
+  box-shadow: 8px 8px 20px rgba(47, 45, 45, 0.3);
+  z-index: 10;
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .polaroid {
+      transform: none !important;
+      margin-bottom: 30px;
+  }
+
+  .col-6 {
+      margin-bottom: 20px;
+  }
+}
