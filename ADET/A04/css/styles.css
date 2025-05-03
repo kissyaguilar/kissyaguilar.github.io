@@ -77,19 +77,19 @@ body {
   flex: 1;
   overflow-y: auto;
   padding-right: 10px;
+  width: 100%;
 }
 
 .receipt-section {
   width: 250px;
   flex-shrink: 0;
   overflow-y: auto;
-  padding-left: 10px;
 }
 
 .categories {
   display: flex;
   flex-wrap: nowrap;
-  gap: 10px;
+  gap: 5px;
   padding: 10px;
   background: #fff;
   border-radius: 15px;
@@ -160,7 +160,8 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
   justify-items: center;
-  margin: 20px;
+  margin: 20px 0;
+  width: 100%;
 }
 
 .product-card {
@@ -245,6 +246,7 @@ body {
 .receipt h5 {
   font-family: 'Playfair Display', serif;
   color: #895637;
+  font-size: 20px;
 }
 
 .receipt-item {
@@ -347,7 +349,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 15px;
     padding: 15px;
-    margin: 15px;
+    margin: 15px 0;
   }
 
   .product-card {
@@ -393,7 +395,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 10px;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0;
   }
 
   .product-card {
@@ -432,7 +434,7 @@ body {
   }
 
   .receipt-section {
-    width: 180px;
+    width: 150px;
   }
 
   .payment-buttons {
@@ -441,5 +443,20 @@ body {
 
   .payment-buttons button {
     width: 100%;
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .proceed-transaction {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .receipt h5 {
+    font-size: 16px;
+  }
+
+  .receipt-item {
+    font-size: 12px;
   }
 }
