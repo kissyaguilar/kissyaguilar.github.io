@@ -107,7 +107,7 @@ body {
 }
 
 .categories::-webkit-scrollbar {
-  height: 8px;
+  height: 5px;
 }
 
 .categories::-webkit-scrollbar-track {
@@ -310,7 +310,7 @@ body {
 .receipt::-webkit-scrollbar,
 .categories-section::-webkit-scrollbar,
 .receipt-section::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 
 .maincontainer::-webkit-scrollbar-track,
