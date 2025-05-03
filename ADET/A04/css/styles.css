@@ -76,7 +76,6 @@ body {
 .categories-section {
   flex: 1;
   overflow-y: auto;
-  padding-right: 10px;
   width: 100%;
 }
 
@@ -160,8 +159,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
   justify-items: center;
-  margin: 20px 0;
-  width: 100%;
+  margin: 20px;
 }
 
 .product-card {
@@ -349,7 +347,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 15px;
     padding: 15px;
-    margin: 15px 0;
+    margin: 15px;
   }
 
   .product-card {
@@ -393,18 +391,16 @@ body {
 
   .maincontainer {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 10px;
-    padding: 10px;
-    margin: 10px 0;
+    
   }
 
   .product-card {
-    width: 200px;
+    width: 150px;
     padding: 8px;
   }
 
   .product-card img {
-    height: 180px;
+    height: 150px;
     border-radius: 20px;
     object-fit: contain;
   }
@@ -429,12 +425,12 @@ body {
   }
 
   .product-image {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 
   .receipt-section {
-    width: 150px;
+    width: 130px;
   }
 
   .payment-buttons {
