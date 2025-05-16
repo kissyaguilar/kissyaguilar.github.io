@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Café du Kiss </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="assets/img/brand/cafe_du_kiss.png" type="image/Café du Kiss">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="header">
+      <div class="d-flex align-items-center">
+        <div class="logo">
+          <img src="assets/img/brand/cafe_du_kiss_logo.png" alt="Café du Kiss Logo">
+        </div>
+        <div class="search-container">
+          <span class="search-icon"><i class="bi bi-search"></i></span>
+          <input type="text" class="search-bar" placeholder="Search menu..." oninput="searchProducts(this.value)">
+        </div>
+      </div>
+      <div class="date" id="currentDate"></div>
+    </div>
+    <div class="main-content">
+      <div class="categories-section">
+        <div class="p-1 mb-2">
+          <div class="categories" id="categories"></div>
+        </div>
+        <div class="card p-3 maincontainer" id="maincontainer"></div>
+      </div>
+      <div class="receipt-section">
+        <div class="card p-3 receipt">
+          <h5 id="bill-details">BILL DETAILS #</h5>
+          <div id="receipt-items"></div>
+          <div class="mt-4">
+            <div class="receipt-item">
+              <span>SUBTOTAL</span>
+              <span id="subtotalValue">₱0.00</span>
+            </div>
+            <div class="receipt-item">
+              <span>DISCOUNT</span>
+              <span id="discountValue">-₱0.00</span>
+            </div>
+            <div class="receipt-item">
+              <span>TAX (1%)</span>
+              <span id="taxValue">₱0.00</span>
+            </div>
+            <div class="receipt-item">
+              <span><b>TOTAL</b></span>
+              <span><b id="totalValue">₱0.00</b></span>
+            </div>
+          </div>
+          <div class="payment-buttons">
+            <button id="cashButton" onclick="selectPayment('Cash')">Pay with Cash</button>
+            <button id="cardButton" onclick="selectPayment('Card')">Pay with Card</button>
+          </div>
+          <button class="proceed-transaction" onclick="proceedTransaction()">Proceed Transaction</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script/systemFunction.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
