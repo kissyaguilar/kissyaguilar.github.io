@@ -348,23 +348,37 @@ body {
         padding: 24px;
     }
 
-    #features,
-    #howItWorks,
-    #resources,
-    #motivation,
-    #footerContent,
-    #embedToDoList {
-        padding: 32px 16px;
+    #motivation .card-luxury {
+        padding: 1rem;
     }
 
-    #footerContent h5 {
-        font-size: 19px;
+    .motivation-quote {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        padding: 0.75rem 1rem;
     }
 
-    #footerContent p,
-    #footerContent .explore-links a {
-        font-size: 14px;
+    .motivation-img {
+        max-width: 200px;
     }
+}
+
+#features,
+#howItWorks,
+#resources,
+#motivation,
+#footerContent,
+#embedToDoList {
+    padding: 32px 16px;
+}
+
+#footerContent h5 {
+    font-size: 19px;
+}
+
+#footerContent p,
+#footerContent .explore-links a {
+    font-size: 14px;
 }
 
 @media (max-width: 576px) {
@@ -401,5 +415,23 @@ body {
     #footerContent .social-links img {
         width: 20px;
         height: 20px;
+    }
+
+    .motivation-img {
+        max-width: 150px;
+    }
+
+    .motivation-quote {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    #motivation h2 {
+        font-size: 1.2rem;
+    }
+
+    #motivation p {
+        font-size: 0.8rem;
+
     }
 }
