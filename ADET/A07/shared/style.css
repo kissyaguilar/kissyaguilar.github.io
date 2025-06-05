@@ -62,6 +62,10 @@
     border-color: #004d26;
 }
 
+.todo-list .list-group-item {
+    font-family: 'Poppins', sans-serif;
+}
+
 .todo-list {
     max-height: 300px;
     overflow-y: auto;
