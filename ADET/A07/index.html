@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Working Student Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="shared/workingStudentHubStyle.css">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/Working Student Hub">
+</head>
+
+<body>
+    <nav class="top-nav navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#hero">
+                <img src="assets/workingStudentHub1.png" width="80" height="80" alt="Logo" />
+                <span class="fw-bold text-uppercase ms-2">Working Student Hub</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#howItWorks">Steps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#embedToDoList">To-Do</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <a class="navbar-brand d-flex align-items-center" href="#hero">
+            <img src="assets/workingStudentHub.png" width="60" height="60" alt="Logo" />
+            <span class="fw-bold text-uppercase ms-2">Working Student Hub</span>
+        </a>
+        <ul class="navbar-nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#howItWorks">Steps</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#embedToDoList">To-Do</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <section id="hero" class="hero">
+            <div class="hero-text">
+                <h1 class="display-4">Welcome to Your Growth Space</h1>
+                <p class="lead">Fuel your journey as a working student with the right tools, support, and daily
+                    inspiration—designed just for you.</p>
+                <a href="#embedToDoList" class="btn me-3">Begin Now</a>
+                <a href="#howItWorks" class="btn btn-secondary">Learn More</a>
+            </div>
+        </section>
+
+        <section id="features" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-uppercase" style="color: #006633;">Fuel Your Success</h2>
+                    <p class="text-muted">One tool, one goal, one step at a time.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-luxury">
+                            <div class="mb-4 text-center">
+                                <svg width="50" height="50" fill="none" stroke="#FFC107" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                    <path d="M12 3L3 12h9l-3 9 12-12H12z" />
+                                </svg>
+                            </div>
+                            <h5 class="fw-bold mb-2 text-center">Task Mastery</h5>
+                            <p class="text-muted text-center">Conquer tasks with focus and skill.</p>
+                            <a href="#embedToDoList"
+                                class="text-decoration-none text-green fw-semibold d-block text-center">Start Now</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-luxury">
+                            <div class="mb-4 text-center">
+                                <svg width="50" height="50" fill="#FFC107" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 2v3H7V4h10zm0 14H7v-7h10v7zm0-9H7V7h10v2z" />
+                                </svg>
+                            </div>
+                            <h5 class="fw-bold mb-2 text-center">Study Boost</h5>
+                            <p class="text-muted text-center">Enhance learning with smart tools.</p>
+                            <a href="#resources"
+                                class="text-decoration-none text-green fw-semibold d-block text-center">Explore</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-luxury">
+                            <div class="mb-4 text-center">
+                                <svg width="50" height="50" fill="#FFC107" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </div>
+                            <h5 class="fw-bold mb-2 text-center">Motivation Lift</h5>
+                            <p class="text-muted text-center">Fuel your drive with daily goals.</p>
+                            <a href="#motivation"
+                                class="text-decoration-none text-green fw-semibold d-block text-center">Get Inspired</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="howItWorks" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-uppercase" style="color: #006633;">Your Success Roadmap</h2>
+                    <p class="text-muted">From vision to victory—start here.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-6 col-md-3">
+                        <div class="card-luxury text-center">
+                            <div class="mb-4">
+                                <svg width="50" height="50" fill="#006633" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V8h14v12zM7 10h5v5H7z" />
+                                </svg>
+                            </div>
+                            <h6 class="fw-bold">Plan</h6>
+                            <p class="text-muted">Set your path with purpose to succeed.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card-luxury text-center">
+                            <div class="mb-4">
+                                <svg width="50" height="50" fill="#FFC107" viewBox="0 0 24 24">
+                                    <path
+                                        d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31 1.53 1.53 3.56 2.37 5.71 2.37 2.15 0 4.18-.84 5.71-2.37 3.12-3.12 3.12-8.19 0-11.31zm-2.12 9.29c-1.45 1.45-3.39 2.25-5.44 2.25-2.05 0-3.99-.8-5.44-2.25-2.78-2.78-2.78-7.29 0-10.07L12 4.69l4.9 4.9c2.78 2.78 2.78 7.29 0 10.07zM11 11h2v6h-2zm0-4h2v2h-2z" />
+                                </svg>
+                            </div>
+                            <h6 class="fw-bold">Focus</h6>
+                            <p class="text-muted">Tune out the noise and give your goals full power.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card-luxury text-center">
+                            <div class="mb-4">
+                                <svg width="50" height="50" fill="#006633" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20 8h-3V6h-2v2h-3V6H9v2H6v10h12V8zm-5 9h-2v-7h2v7zm4 0h-2v-7h2v7zm-9 0H6v-7h2v7z" />
+                                </svg>
+                            </div>
+                            <h6 class="fw-bold">Rest</h6>
+                            <p class="text-muted">Pause to recover so you can rise even stronger.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card-luxury text-center">
+                            <div class="mb-4">
+                                <svg width="50" height="50" fill="#FFC107" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm-1.53 12L9.43 14.3a1 1 0 0 1-.43-.83v-.14c0-.38.31-.69.69-.69h.14c.38 0 .69.31.69.69 0 .21-.09.4-.22.53l-.53.47.47.53c.13.13.22.32.22.53v.14c0 .38-.31.69-.69.69h-.14a.99.99 0 0 1-.69-.31l-1.03-1.03zm4.07-1.47c-.13-.13-.22-.32-.22-.53v-.14c0-.38.31-.69.69-.69h.14c.38 0 .69.31.69.69 0 .21-.09.4-.22.53l-.53.47.47.53c.13.13.22.32.22.53v.14c0 .38-.31.69-.69.69h-.14a.99.99 0 0 1-.69-.31l-1.03-1.03z" />
+                                </svg>
+                            </div>
+                            <h6 class="fw-bold">Reflect</h6>
+                            <p class="text-muted">Look back with clarity to move forward wiser.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Embedded To-Do-List -->
+        <section id="embedToDoList" class="py-5">
+            <div class="text-center mb-4">
+                <h2 style="font-weight: 700; letter-spacing: 1px;">
+                    FOCUS: <span style="color: #006633;">ON</span>
+                </h2>
+                <p class="text-muted">Stay productive with your personalized To-Do list below</p>
+            </div>
+
+            <div class="embed-wrapper rounded-4">
+                <iframe src="toDoList.html" title="Work & Study To-Do" width="100%" height="600" style="  border: 1px solid green;
+ border-radius: 20px;" allow="autoplay"></iframe>
+            </div>
+        </section>
+
+        <section id="resources" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-uppercase" style="color: #006633;">Growth Resources</h2>
+                    <p class="text-muted">Unlock your potential with these tools.</p>
+                </div>
+                <div class="row g-4 justify-content-end">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-luxury">
+                            <h5 class="fw-bold mb-2">Learning Hub</h5>
+                            <p class="text-muted"><a href="https://www.coursera.org" target="_blank"
+                                    class="text-decoration-none text-green fw-semibold">Coursera</a> for skill growth.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-luxury">
+                            <h5 class="fw-bold mb-2">Task Organizer</h5>
+                            <p class="text-muted"><a href="https://www.trello.com" target="_blank"
+                                    class="text-decoration-none text-green fw-semibold">Trello</a> for efficiency.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-luxury">
+                            <h5 class="fw-bold mb-2">Financial Aid</h5>
+                            <p class="text-muted"><a href="https://www.scholarships.com" target="_blank"
+                                    class="text-decoration-none text-green fw-semibold">Scholarships.com</a> for
+                                support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="motivation" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-uppercase" style="color: #006633;">Padayon: Beyond Work, Beyond School,
+                        Toward Dreams</h2>
+                    <p class="text-muted">Juggling life, school, and dreams — yet still moving forward.</p>
+                </div>
+                <div class="card-luxury text-center position-relative">
+
+                    <img src="assets/speech.png" alt="DLSU Summa Cum Laude speech"
+                        class="motivation-img img-fluid mx-auto d-block mb-4">
+
+                    <blockquote class="text-green motivation-quote mt-4">
+                        Let me ask you something: What if the person most deserving of this medal… never got one? What
+                        if the real valedictorians aren’t the ones standing on this stage—but are quietly seated among
+                        you right now?<br><br>
+                        If I could remove this medal from my neck and give it to someone else… I would.<br><br>
+                        I would hand it to <strong>my classmate who worked online jobs and part-time shifts between
+                            classes, some with cracked phones, borrowed laptops, selling food, art, anything—just to
+                            make ends meet. To the ones who caught jeeps at dawn, who walked under the heat or in the
+                            rain, who paid their own tuition—because no one else could.</strong><br><br>
+                        <strong>To those who showed up with tired eyes, but hearts that refused to quit. To the one who
+                            studied through tears, who cried in silence, but still made it to class with a
+                            smile.</strong><br><br>
+                        They never complained. They never asked to be seen.<br><br>
+                        But, I saw them. Because maybe I earned the highest GPA. But they earned my deepest respect.
+                        <br><br>— A Lasallian Summa Cum Laude, De La Salle University, 2025
+                    </blockquote>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="footerContent">
+            <div class="container">
+                <div class="mb-4">
+                    <h5 class="text-uppercase fw-bold">Our Mission</h5>
+                    <p class="small">Empowering working students to thrive.</p>
+                </div>
+                <div class="mb-4">
+                    <h5 class="text-uppercase fw-bold">Explore</h5>
+                    <div class="explore-links">
+                        <a href="#features">Features</a>
+                        <a href="#howItWorks">Steps</a>
+                        <a href="#resources">Resources</a>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h5 class="text-uppercase fw-bold">Join Us</h5>
+                    <div class="social-links">
+                        <a href="#">
+                            <img src="https://img.icons8.com/ios-filled/25/ffffff/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#">
+                            <img src="https://img.icons8.com/ios-filled/25/ffffff/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="#">
+                            <img src="https://img.icons8.com/ios-filled/25/ffffff/instagram-new.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <p class="small mb-0">© 2025 Working Student Hub. All rights reserved.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js">
+
+        integrity = "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin = "anonymous"</script>
+</body>
+
+</html>
