@@ -455,3 +455,28 @@ body {
 
     }
 }
+
+
+@media (max-width: 360px) {
+    .top-nav .navbar-brand {
+        padding: 5px 6px;
+    }
+
+    .top-nav .navbar-title {
+        font-size: 0.7rem;
+    }
+
+    .top-nav .navbar-logo {
+        width: 22px;
+        height: 22px;
+    }
+
+    .top-nav .navbar-toggler {
+        padding: 4px 4px;
+    }
+
+    .top-nav .navbar-toggler-icon {
+        width: 0.8em;
+        height: 0.8em;
+    }
+}
